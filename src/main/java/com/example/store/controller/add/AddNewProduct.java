@@ -1,10 +1,9 @@
-package store.controller.add;
+package com.example.store.controller.add;
 
-import store.controller.select.ShowAllProducts;
-import store.controller.select.ViewCategories;
-import store.model.Database;
-import store.model.Operation;
-import store.model.User;
+import com.example.store.controller.select.ViewCategories;
+import com.example.store.model.dao.Database;
+import com.example.store.model.User;
+import com.example.store.model.Operation;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

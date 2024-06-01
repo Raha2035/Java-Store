@@ -1,8 +1,9 @@
-package store.controller.order;
+package com.example.store.controller.order;
 
-import store.controller.select.ViewStores;
-import store.controller.select.getStoreProducts;
-import store.model.*;
+import com.example.store.controller.select.getStoreProducts;
+import com.example.store.model.*;
+import com.example.store.controller.select.ViewStores;
+import com.example.store.model.dao.Database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

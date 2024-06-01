@@ -1,14 +1,13 @@
-package store.controller.add;
+package com.example.store.controller.add;
 
-import store.controller.select.ShowAllProducts;
-import store.model.*;
+import com.example.store.model.dao.Database;
+import com.example.store.model.Operation;
+import com.example.store.model.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
-import java.util.Set;
 
 public class AddNewStore implements Operation {
     /**

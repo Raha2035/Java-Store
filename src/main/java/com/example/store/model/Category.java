@@ -1,4 +1,4 @@
-package store.model;
+package com.example.store.model;
 
 public class Category {
     private int ID;

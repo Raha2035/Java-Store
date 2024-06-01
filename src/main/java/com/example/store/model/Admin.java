@@ -1,9 +1,11 @@
-package store.model;
+package com.example.store.model;
 
-import store.controller.add.AddNewAccount;
-import store.controller.add.AddNewCategory;
-import store.controller.add.AddNewProduct;
-import store.controller.add.AddNewStore;
+import com.example.store.controller.Quit;
+import com.example.store.controller.add.AddNewAccount;
+import com.example.store.controller.add.AddNewCategory;
+import com.example.store.controller.add.AddNewProduct;
+import com.example.store.controller.add.AddNewStore;
+import com.example.store.model.dao.Database;
 
 import java.util.Scanner;
 
@@ -13,7 +15,8 @@ public class Admin extends User{
             new AddNewCategory(),
             new AddNewProduct(),
             new AddNewStore(),
-            new AddNewAccount(1)
+            new AddNewAccount(1),
+            new Quit()
     };
     public Admin() {
         super();
@@ -29,18 +32,17 @@ public class Admin extends User{
         System.out.println("02. Add new product");
         System.out.println("03. Add new store");
         System.out.println("04. Add new Admin");
-        System.out.println("05.Edit my data");
-        System.out.println("06. Quit");
+        System.out.println("05. Quit");
 
         int i = scanner.nextInt();
 
-        if(i<1 || i>6){
+        if(i<1 || i>5){
             showList(database,scanner);
             return;
         }
 
         operations[i-1].operation(database, scanner, this);
-        if(i != 6){
+        if(i != 5){
             showList(database,scanner);
         }
 

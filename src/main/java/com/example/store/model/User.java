@@ -1,4 +1,6 @@
-package store.model;
+package com.example.store.model;
+
+import com.example.store.model.dao.Database;
 
 import java.util.Scanner;
 

@@ -1,12 +1,12 @@
-package store.model;
+package com.example.store.model;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Store {
+public class ShoppingCart {
     private int ID;
-    private String name;
+    private User user;
     private HashMap<Product, Integer> products;
+    private Double totalPrice;
 
     public int getID() {
         return ID;
@@ -16,12 +16,12 @@ public class Store {
         this.ID = ID;
     }
 
-    public String getName() {
-        return name;
+    public User getUser() {
+        return user;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public HashMap<Product, Integer> getProducts() {
@@ -30,5 +30,13 @@ public class Store {
 
     public void setProducts(HashMap<Product, Integer> products) {
         this.products = products;
+    }
+
+    public Double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(Double totalPrice) {
+        this.totalPrice = totalPrice;
     }
 }

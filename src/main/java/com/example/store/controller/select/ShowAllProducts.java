@@ -1,6 +1,7 @@
-package store.controller.select;
+package com.example.store.controller.select;
 
-import store.model.*;
+import com.example.store.model.*;
+import com.example.store.model.dao.Database;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
